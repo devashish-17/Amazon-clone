@@ -6,7 +6,6 @@ function App() {
   return (
       <div className=''>
           <Header />
-          <Header2 />
           <CarouselImg />
       </div>
   )
