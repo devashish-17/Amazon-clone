@@ -8,8 +8,8 @@ import Header2 from "./Header2";
 const Header = () => {
     return (
         <>
-            <div className="bg-[#131921] pb-2 md:py-2">
-                <div className="text-white h-14 md:h-[4.5rem] px-2 flex items-center justify-between md:gap-2">
+            <div className="bg-[#131921] md:py-2">
+                <div className="text-white h-16 md:h-[4.5rem] px-2 flex items-center justify-between md:gap-2">
                     <div className="h-full flex items-center">
                         <div className="headerHover">
                             <img src={amazon1} alt="img" className="w-24 md:w-32" />
@@ -47,7 +47,7 @@ const Header = () => {
                         </div>
 
                         <div className="headerHover">
-                            <div className="bg-[#131921] w-2 md:w-5 absolute ml-[0.7rem] mt-[-1.3rem] md:ml-[1rem] md:mt-[-1.5rem] flex justify-center">
+                            <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] mt-[-1.3rem] md:ml-[1rem] md:mt-[-1.5rem] flex justify-center">
                                 <p className="text-orange-500 font-bold text-sm md:text-base">
                                     0
                                 </p>
@@ -59,9 +59,9 @@ const Header = () => {
 
                 </div>
 
-                <div className="md:hidden">
+                {/* <div className="md:hidden">
                     <Searchbox />
-                </div>
+                </div> */}
             </div>
 
             <Header2 />
