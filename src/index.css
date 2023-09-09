@@ -4,7 +4,7 @@
 
 @layer components {
     .headerHover {
-        @apply px-2 h-full flex items-center border border-transparent hover:border-white cursor-pointer duration-100
+        @apply px-2 h-full flex items-center md:border border-transparent hover:border-white cursor-pointer duration-100
     }
     .headerHover2 {
         @apply flex items-center border border-transparent hover:border-white cursor-pointer h-full px-2

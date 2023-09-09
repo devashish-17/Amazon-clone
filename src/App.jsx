@@ -1,4 +1,4 @@
-import { Carousel } from "react-responsive-carousel"
+import CarouselImg from "./components/CarouselImg"
 import Header from "./components/header/Header"
 import Header2 from "./components/header/Header2"
 
@@ -7,7 +7,7 @@ function App() {
       <div className=''>
           <Header />
           <Header2 />
-          {/* <Carousel /> */}
+          <CarouselImg />
       </div>
   )
 }
