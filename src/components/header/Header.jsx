@@ -4,6 +4,7 @@ import Searchbox from "./Searchbox";
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { FaRegUser } from "react-icons/fa"
 import Header2 from "./Header2";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -11,9 +12,9 @@ const Header = () => {
             <div className="bg-[#131921] md:py-2">
                 <div className="text-white h-16 md:h-[4.5rem] px-2 flex items-center justify-between md:gap-2">
                     <div className="h-full flex items-center">
-                        <div className="headerHover">
+                        <Link to="/" className="headerHover">
                             <img src={amazon1} alt="img" className="w-24 md:w-32" />
-                        </div>
+                        </Link>
                     </div>
 
                     <div className="headerHover hidden lg:flex">
@@ -33,12 +34,12 @@ const Header = () => {
                     </div>
 
                     <div className="flex items-center h-full">
-                        <div className="headerHover">
+                        <Link to="/login" className="headerHover">
                             <FaRegUser className="text-xl lg:mr-2 lg:text-xl" />
                             <p className="text-sm hidden lg:flex flex-col">
                                 Hello, {" ---- "} <span className="font-semibold flex items-end mt-[-0.2rem]"> Accounts & Lists <MdArrowDropDown className="text-lg" /> </span>
                             </p>
-                        </div>
+                        </Link>
 
                         <div className="headerHover hidden xl:flex">
                             <p className="text-sm flex flex-col">
@@ -46,7 +47,7 @@ const Header = () => {
                             </p>
                         </div>
 
-                        <div className="headerHover">
+                        <Link to="/cart" className="headerHover">
                             <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] mt-[-1.3rem] md:ml-[1rem] md:mt-[-1.5rem] flex justify-center">
                                 <p className="text-orange-500 font-bold text-sm md:text-base">
                                     0
@@ -54,7 +55,7 @@ const Header = () => {
                             </div>
                             <LiaCartPlusSolid className="text-3xl md:text-5xl" />
                             <p className="font-semibold hidden md:block">Cart</p>
-                        </div>
+                        </Link>
                     </div>
 
                 </div>

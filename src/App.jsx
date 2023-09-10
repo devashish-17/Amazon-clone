@@ -1,12 +1,37 @@
-import CarouselImg from "./components/CarouselImg"
-import Header from "./components/header/Header"
-import Header2 from "./components/header/Header2"
+import HomePage from "./pages/HomePage"
+import  LoginPage from "./pages/LoginPage"
+import  Cart from "./pages/Cart"
+import SignUp from './pages/SignUp'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (<HomePage />),
+  },
+  {
+    path: "/login",
+    element: (<LoginPage />),
+  },
+  {
+    path: "/cart",
+    element: (<Cart />),
+  },
+  {
+    path: "/signup",
+    element: (<SignUp />),
+  },
+]);
 
 function App() {
   return (
       <div className=''>
-          <Header />
-          <CarouselImg />
+          <RouterProvider router={router} />
       </div>
   )
 }
