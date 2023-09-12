@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <div className="bg-[#131921] md:py-2">
-                <div className="text-white h-16 md:h-[4.5rem] px-2 flex items-center justify-between md:gap-2">
+            <div className="bg-[#131921] md:py-2 sticky top-0 z-50">
+                <div className="text-white h-14 md:h-12 px-2 flex items-center justify-between md:gap-2">
                     <div className="h-full flex items-center">
                         <Link to="/" className="headerHover">
                             <img src={amazon1} alt="img" className="w-24 md:w-32" />
@@ -20,7 +20,7 @@ const Header = () => {
                     <div className="headerHover hidden lg:flex">
                         <MdOutlineLocationOn className="text-2xl" />
                         <p className="text-sm flex flex-col">
-                            Deliver to {" ---- "} <span className="font-semibold mt-[-0.2rem]"> Update Location </span>
+                            Deliver to {" ---- "} <span className="font-semibold -mt-[0.2rem]"> Update Location </span>
                         </p>
                     </div>
 
@@ -37,18 +37,18 @@ const Header = () => {
                         <Link to="/login" className="headerHover">
                             <FaRegUser className="text-xl lg:mr-2 lg:text-xl" />
                             <p className="text-sm hidden lg:flex flex-col">
-                                Hello, {" ---- "} <span className="font-semibold flex items-end mt-[-0.2rem]"> Accounts & Lists <MdArrowDropDown className="text-lg" /> </span>
+                                Hello, {" ---- "} <span className="font-semibold flex items-end -mt-[0.2rem]"> Accounts & Lists <MdArrowDropDown className="text-lg" /> </span>
                             </p>
                         </Link>
 
                         <div className="headerHover hidden xl:flex">
                             <p className="text-sm flex flex-col">
-                                Returns <span className="font-semibold flex items-end mt-[-0.2rem]"> & Orders </span>
+                                Returns <span className="font-semibold flex items-end -mt-[0.2rem]"> & Orders </span>
                             </p>
                         </div>
 
                         <Link to="/cart" className="headerHover">
-                            <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] mt-[-1.3rem] md:ml-[1rem] md:mt-[-1.5rem] flex justify-center">
+                            <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] -mt-[1.3rem] md:ml-[1rem] md:-mt-[1.5rem] flex justify-center">
                                 <p className="text-orange-500 font-bold text-sm md:text-base">
                                     0
                                 </p>

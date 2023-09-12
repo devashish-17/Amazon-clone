@@ -18,16 +18,16 @@ const CarouselImg = () => {
                 interval={5000}
             >
                 <div>
-                    <img loading="lazy" src={c1} alt="image1" />
+                    <img loading="lazy" src={c1} alt="image1" className="h-36 md:h-72" />
                 </div>
                 <div>
-                    <img loading="lazy" src={c2} alt="image2" />
+                    <img loading="lazy" src={c2} alt="image2" className="h-36 md:h-72" />
                 </div>
                 <div>
-                    <img loading="lazy" src={c3} alt="image3" />
+                    <img loading="lazy" src={c3} alt="image3" className="h-36 md:h-72" />
                 </div>
                 <div>
-                    <img loading="lazy" src={c4} alt="image4" />
+                    <img loading="lazy" src={c4} alt="image4" className="h-36 md:h-72" />
                 </div>
 
             </Carousel>
