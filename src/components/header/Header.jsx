@@ -57,12 +57,7 @@ const Header = () => {
                             <p className="font-semibold hidden md:block">Cart</p>
                         </Link>
                     </div>
-
                 </div>
-
-                {/* <div className="md:hidden">
-                    <Searchbox />
-                </div> */}
             </div>
 
             <Header2 />
