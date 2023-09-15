@@ -4,8 +4,9 @@ import { RxHamburgerMenu } from "react-icons/rx"
 import { GiHamburgerMenu } from "react-icons/gi";
 import SideBar from "./SideBar";
 import { MdClose } from "react-icons/md";
-import { MdOutlineLocationOn, MdArrowDropDown } from "react-icons/md";
 import Searchbox from "./Searchbox";
+
+const header2 = ["All", "Prime", "Sell", "Best Seller", "Today's Deals", "Mobiles", "Customer Service", "Amazon miniTV", "Electronics", "Home & Kitchen"]
 
 const Header2 = () => {
     const ref = useRef();
@@ -24,15 +25,9 @@ const Header2 = () => {
                     <RxHamburgerMenu className='text-lg' />
                     <p className="hidden md:flex"> All </p>
                 </span>
-                <span className='headerHover2 hidden lg:flex'> Prime </span>
-                <span className='headerHover2 hidden lg:flex'> Sell </span>
-                <span className='headerHover2 hidden lg:flex'> Best Seller </span>
-                <span className='headerHover2 hidden lg:flex'> Today's Deals </span>
-                <span className='headerHover2 hidden lg:flex'> Mobiles </span>
-                <span className='headerHover2 hidden lg:flex'> Customer Service </span>
-                <span className='headerHover2 hidden lg:flex'> Amazon miniTV </span>
-                <span className='headerHover2 hidden lg:flex'> Electronics </span>
-                <span className='headerHover2 hidden lg:flex'> Home & Kitchen </span>
+                {
+                    header2.map((ele, index) => <span className='headerHover2 hidden lg:flex' key={index}> { ele } </span> )
+                }
             </div>
 
 

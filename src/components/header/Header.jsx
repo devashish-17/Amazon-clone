@@ -12,7 +12,7 @@ const Header = () => {
             <div className="bg-[#131921] md:py-2 sticky top-0 z-50">
                 <div className="text-white h-14 md:h-12 px-2 flex items-center justify-between md:gap-2">
                     <div className="h-full flex items-center">
-                        <Link to="/" className="headerHover">
+                        <Link to="/" className="hover:border">
                             <img src={amazon1} alt="img" className="w-24 md:w-32" />
                         </Link>
                     </div>
@@ -48,7 +48,7 @@ const Header = () => {
                         </div>
 
                         <Link to="/cart" className="headerHover">
-                            <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] -mt-[1.3rem] md:ml-[1rem] md:-mt-[1.5rem] flex justify-center">
+                            <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] -mt-[1.3rem] md:ml-[1rem] md:-mt-[1.5rem] flex justify-center h-4">
                                 <p className="text-orange-500 font-bold text-sm md:text-base">
                                     0
                                 </p>
