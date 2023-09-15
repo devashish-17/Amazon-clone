@@ -14,7 +14,7 @@ const FooterMid = () => {
                 <span> Back to top </span>
             </div>
 
-            <div className='bg-[#242f3c] text-white grid justify-center grid-cols-4 lg:grid-cols-6 py-6 lg:py-12'>
+            <div className='bg-[#242f3c] text-white grid justify-center grid-cols-2 lg:grid-cols-6 py-6 lg:py-12'>
                 <div></div>
                 <div>
                     <p className='lg:text-lg font-bold mb-1 lg:mb-2'> Get to Know Us </p>
