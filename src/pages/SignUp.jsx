@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const SignUp = () => {
     return (
-        <div>
+        <div className="">
             <div className="w-full">
                 <div className="w-full pb-10">
                     <form className="w-80 md:w-96 mx-auto flex flex-col items-center">
@@ -92,7 +92,7 @@ const SignUp = () => {
                                 </div>
                                 <button
                                     // onClick={handleRegistration}
-                                    className="w-full py-1.5 text-sm font-bold rounded-lg bg-[#fdbc39]"
+                                    className="w-full py-1.5 text-sm font-bold rounded-lg bg-[#ffd814]"
                                 >
                                     Continue
                                 </button>

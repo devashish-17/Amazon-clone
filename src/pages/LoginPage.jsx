@@ -55,7 +55,7 @@ const LoginPage = () => {
                                 </div>
                                 <button
                                     // onClick={handleLogin}
-                                    className="w-full py-1.5 text-sm font-bold rounded-lg bg-[#fdbc39]"
+                                    className="w-full py-1.5 text-sm font-bold rounded-lg bg-[#ffd814]"
                                 >
                                     Continue
                                 </button>

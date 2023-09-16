@@ -1,4 +1,5 @@
 import React from 'react'
+import BackToTop from '../BackToTop';
 
 const FooterMid = () => {
 
@@ -10,20 +11,18 @@ const FooterMid = () => {
 
     return (
         <div>
-            <div className='bg-[#40546e] hover:bg-[#5e7ca2] cursor-pointer flex justify-center py-2 lg:py-4 text-white font-semibold text-sm'>
-                <span> Back to top </span>
-            </div>
+            <BackToTop className='w-' />
 
-            <div className='bg-[#242f3c] text-white grid justify-center grid-cols-2 lg:grid-cols-6 py-6 lg:py-12'>
+            <div className='bg-[#242f3c] text-white grid justify-center grid-cols-4 lg:grid-cols-6 py-6 lg:py-12'>
                 <div></div>
                 <div>
-                    <p className='lg:text-lg font-bold mb-1 lg:mb-2'> Get to Know Us </p>
-                    {list1.map(ele => <h3 className='text-sm lg:text-md font-semibold cursor-pointer hover:underline mb-1 lg:mb-2'> {ele} </h3>)}
+                    <p className='text-sm italic lg:text-lg font-bold mb-1 lg:mb-2'> Get to Know Us </p>
+                    {list1.map(ele => <h3 className='text-xs lg:text-md font-semibold cursor-pointer hover:underline mb-1 lg:mb-2'> {ele} </h3>)}
                 </div>
 
                 <div>
-                    <p className='lg:text-lg font-bold mb-1 lg:mb-2'> Connect with Us </p>
-                    {list2.map(ele => <h3 className='text-sm lg:text-md font-semibold cursor-pointer hover:underline mb-1 lg:mb-2'> {ele} </h3>)}
+                    <p className='text-sm italic lg:text-lg font-bold mb-1 lg:mb-2'> Connect with Us </p>
+                    {list2.map(ele => <h3 className='text-xs lg:text-md font-semibold cursor-pointer hover:underline mb-1 lg:mb-2'> {ele} </h3>)}
                 </div>
 
                 <div className='hidden lg:block'>

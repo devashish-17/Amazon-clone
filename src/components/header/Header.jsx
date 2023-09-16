@@ -48,9 +48,9 @@ const Header = () => {
                         </div>
 
                         <Link to="/cart" className="headerHover">
-                            <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] -mt-[1.3rem] md:ml-[1rem] md:-mt-[1.5rem] flex justify-center h-4">
+                            <div className="bg-[#131921] w-[0.6rem] md:w-5 absolute ml-[0.7rem] -mt-[1.3rem] md:ml-[1rem] md:-mt-[1.5rem] flex justify-center h-[22px]">
                                 <p className="text-orange-500 font-bold text-sm md:text-base">
-                                    0
+                                    0 { /* 131921 */ }
                                 </p>
                             </div>
                             <LiaCartPlusSolid className="text-3xl md:text-5xl" />
