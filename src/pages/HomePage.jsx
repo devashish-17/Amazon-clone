@@ -4,8 +4,9 @@ import ProductList from "../components/ProductList"
 import FooterTop from "../components/footer/FooterTop"
 import FooterMid from "../components/footer/FooterMid"
 import FooterBottom from "../components/footer/FooterBottom"
+import { Link } from "react-router-dom";
 
-const products = ['items', 'items', 'items', 'items', 'items', 'items', 'items', 'items'];
+const productCategories = ['Categories', 'Categories', 'Categories', 'Categories', 'Categories', 'Categories', 'Categories', 'Categories'];
 
 const HomePage = () => {
   return (
@@ -15,8 +16,10 @@ const HomePage = () => {
 
       <div className="z-30 relative -mt-10 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-6 mx-6 h-[60rem] ">
         {
-          products.map((ele, index) =>
-            <div key={index} className="bg-blue-400 border border-gray-300"> {ele} </div>
+          productCategories.map((ele, index) =>
+            <Link to="/productlistpage" key={index} className="bg-white border border-gray-300">
+                {ele}
+            </Link>
           )
         }
       </div>
